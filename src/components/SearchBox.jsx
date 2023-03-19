@@ -1,14 +1,15 @@
 
-const SearchBox = () => {
-    return (
-        <div>
-            <input 
-                type='search' 
-                placeholder='search robots'
-                className='pa3 ba b--green bg-lightest-blue'
-            />
-        </div>
-    )
+const SearchBox = ({ searchChange }) => {
+  return (
+    <div className='pa2'>
+      <input
+        className='pa3 ba input'
+        type='search'
+        placeholder='search robots'
+        onChange={searchChange}
+      />
+    </div>
+  );
 }
 
-export default SearchBox
+export default SearchBox;

@@ -1,11 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
+  background-color: #161616; 
+  color: #FFFFFF;
 }
 
 .robots {
-  width: 14em;
+  width: 15em;
+}
+
+.card {
+  background-color: #000000;
+}
+
+h1 {
+  font-family: 'Rubik Iso', cursive;
+}
+
+input {
+  outline: none;
+  background-color: whitesmoke;
 }

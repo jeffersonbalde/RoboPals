@@ -1,15 +1,14 @@
 
-const Card = (props) => {
-    return (
-        <div className='bg-gray dib br3 pa3 ma2 grow bw2 shadow-5' key={props.id}>
-            <img alt='robots' src={`https://robohash.org/${props.id}`} className='robots'/>
-            <div>
-                <h2>{props.name}</h2>
-                <p>{props.email}</p>
-                <p>{props.username}</p>
-            </div>
-        </div>
-    )
+const Card = ({ name, email, id }) => {
+  return (
+    <div className='tc grow br3 pa3 ma2 dib bw2 shadow-5 card'>
+      <img alt='robots' src={`https://robohash.org/${id}`} className='robots'/>
+      <div>
+        <h2>{name}</h2>
+        <p>{email}</p>
+      </div>
+    </div>
+  );
 }
 
-export default Card
+export default Card;
